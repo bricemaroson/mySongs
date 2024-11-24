@@ -1,6 +1,7 @@
 {
   "songs": [
     {
+      "url": "./images/test.jpeg",
       "title": "Blinding Lights 2",
       "artist": "The Weeknd 2",
       "genre": "R&B 2",
@@ -10,6 +11,7 @@
     },
     {
       "id": 4,
+      "url": "./images/test.jpeg",
       "title": "Old Town Road",
       "artist": "Lil Nas X",
       "genre": "Country",
@@ -18,6 +20,7 @@
     },
     {
       "id": 5,
+      "url": "./images/test.jpeg",
       "title": "Blinding Lights",
       "artist": "The Weeknd 2",
       "genre": "R&B",
@@ -26,26 +29,11 @@
     },
     {
       "id": 6,
+      "url": "./images/test.jpeg",
       "title": "rezgui@PC-CYMA-DELL",
       "artist": "tat",
       "genre": "Jazz",
       "date": "2024-11-22T08:33:25.911Z",
-      "liked": false
-    },
-    {
-      "id": 7,
-      "title": "Shape of You 2",
-      "artist": "Me",
-      "genre": "Chanson française",
-      "date": "2028-01-20T00:00:00.000Z",
-      "liked": true
-    },
-    {
-      "id": 8,
-      "title": "Shape of You 2",
-      "artist": "Me",
-      "genre": "Chanson française",
-      "date": "2024-11-22T11:23:58.742Z",
       "liked": false
     }
   ]

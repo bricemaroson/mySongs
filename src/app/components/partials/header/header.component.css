@@ -1,0 +1,10 @@
+.custom-navbar {
+  background-color: white;
+  color: white !important;
+  border-radius:  10px 10px 0 0;
+  box-shadow: 0 2px 2px rgb(190, 190, 190);
+  height: 80px;
+  margin-top: 20px;
+}
+
+

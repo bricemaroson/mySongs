@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-code"></i></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul
+        class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+        style="--bs-scroll-height: 100px"
+      >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Historique</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            [class.disabled]="!isProfilAdmin"
+            [attr.aria-disabled]="!isProfilAdmin ? 'true' : null"
+          >
+            Administrateur
+          </a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/admin/new">Créer</a></li>
+            <li><a routerLink="/admin/show">Détails</a></li>
+            <li><a routerLink="/admin/edit">Modifier</a></li>
+            <li><a routerLink="/admin/permissions">Permissions</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <span *ngIf="!isLoggedIn" class="navbar-text"> Se Connecter </span>
+      <span *ngIf="isLoggedIn" class="navbar-text">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-user"></i>
+            {{ username }}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/users/profil">Profil</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a routerLink="/users/edit">Se deconnecter</a></li>
+          </ul>
+        </li>
+      </span>
+    </div>
+  </div>
+</nav>

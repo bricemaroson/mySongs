@@ -1,0 +1,7 @@
+.custom-footer{
+    background-color: white;
+    color: rgb(0, 0, 0) !important;
+    border-radius:  0 0 10px 10px ;
+    box-shadow: 0 -2px   2px rgb(190, 190, 190);
+    height: 80px;
+}
