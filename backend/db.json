@@ -36,5 +36,43 @@
       "date": "2024-11-22T08:33:25.911Z",
       "liked": false
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "johndoe",
+      "password": "johndoe",
+      "email": "johndoe@example.com",
+      "role_ids": [1, 2]
+    },
+    {
+      "id": 2,
+      "username": "cerib",
+      "password": "cerib",
+      "email": "janedoe@example.com",
+      "role_ids": [3]
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "permissions": [
+        "create_user",
+        "delete_user",
+        "update_user",
+        "view_reports"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Editor",
+      "permissions": ["edit_content", "publish_content", "unpublish_content"]
+    },
+    {
+      "id": 3,
+      "name": "Viewer",
+      "permissions": ["view_content"]
+    }
   ]
 }
