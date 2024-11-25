@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UserComponent } from './user.component';
 import { UserProfilComponent } from './user-profil/user-profil.component';
+import { AuthComponent } from './auth/auth.component';
 
 
 const routes: Routes = [
@@ -10,7 +11,8 @@ const routes: Routes = [
     component: UserComponent,
     children: [
       { path: '', redirectTo: 'profil', pathMatch: 'full' },
-      { path: 'profil', component: UserProfilComponent }
+      { path: 'profil', component: UserProfilComponent },
+      { path: 'auth', component: AuthComponent }
     ]
   }
 ];
@@ -21,7 +23,8 @@ const routes: Routes = [
   declarations: [
 
   
-    UserProfilComponent
+    UserProfilComponent,
+          AuthComponent
   ]
 })
 export class UsersRoutingModule { }

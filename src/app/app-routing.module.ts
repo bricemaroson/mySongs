@@ -7,6 +7,7 @@ import { UserDetailsComponent } from './components/pages/admin/user-details/user
 import { UserCreateComponent } from './components/pages/admin/user-create/user-create.component';
 import { UserEditComponent } from './components/pages/admin/user-edit/user-edit.component';
 import { UserPermissionsComponent } from './components/pages/admin/user-permissions/user-permissions.component';
+import { AuthComponent } from './components/pages/user/auth/auth.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'profil', pathMatch: 'full' },
       { path: 'profil', component: UserProfilComponent },
+      { path: 'auth', component: AuthComponent }
     ],
   },
   {

@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
   
 export class HeaderComponent {
   isProfilAdmin: boolean = true;
-  isLoggedIn: boolean = true;
+  isLoggedIn: boolean = false;
   username: string = 'Brice MAROSON'
 constructor(){}
   ngOnInit() {

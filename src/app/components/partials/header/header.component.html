@@ -44,7 +44,7 @@
         </li>
       </ul>
 
-      <span *ngIf="!isLoggedIn" class="navbar-text"> Se Connecter </span>
+      <span *ngIf="!isLoggedIn" class="navbar-text"> <a routerLink="/users/auth">Se Connecter</a> </span>
       <span *ngIf="isLoggedIn" class="navbar-text">
         <li class="nav-item dropdown">
           <a
