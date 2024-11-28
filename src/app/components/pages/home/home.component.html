@@ -1,1 +1,15 @@
-<p>home works!</p>
+<!-- Utilisation de 'row' à l'extérieur de la boucle ngFor -->
+<div class="row">
+    <!-- Directive ngFor appliquée sur un div 'col-4' pour garantir 3 éléments par ligne -->
+    <div class="col-md-4" *ngFor="let song of songs">
+        <div class="card">
+            <!-- Centrage de l'image avec des styles CSS supplémentaires -->
+            <img src="{{song.url}}" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+                <h5 class="card-title">{{song.artist}}</h5>
+                <p class="card-text">{{song.title}}</p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Details</a>
+            </div>
+        </div>
+    </div>
+</div>

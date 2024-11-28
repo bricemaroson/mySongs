@@ -9,6 +9,8 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { UserComponent } from './components/pages/user/user.component';
 import { UserPermissionsComponent } from './components/pages/admin/user-permissions/user-permissions.component';
 import { AdminComponent } from './components/pages/admin/admin.component';
+import { SongService } from './services/song.service';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { AdminComponent } from './components/pages/admin/admin.component';
     AdminComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [SongService,provideHttpClient()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

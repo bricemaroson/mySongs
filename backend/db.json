@@ -1,7 +1,7 @@
 {
   "songs": [
     {
-      "url": "./images/test.jpeg",
+      "url": "./images/test.jpg",
       "title": "Blinding Lights 2",
       "artist": "The Weeknd 2",
       "genre": "R&B 2",
@@ -11,7 +11,7 @@
     },
     {
       "id": 4,
-      "url": "./images/test.jpeg",
+      "url": "./images/test.jpg",
       "title": "Old Town Road",
       "artist": "Lil Nas X",
       "genre": "Country",
@@ -20,7 +20,7 @@
     },
     {
       "id": 5,
-      "url": "./images/test.jpeg",
+      "url": "./images/test.jpg",
       "title": "Blinding Lights",
       "artist": "The Weeknd 2",
       "genre": "R&B",
@@ -29,7 +29,7 @@
     },
     {
       "id": 6,
-      "url": "./images/test.jpeg",
+      "url": "./images/test.jpg",
       "title": "rezgui@PC-CYMA-DELL",
       "artist": "tat",
       "genre": "Jazz",
